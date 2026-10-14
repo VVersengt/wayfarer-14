@@ -505,7 +505,7 @@
     count: 10
   - type: Gun
     showExamineText: false
-    fireRate: 2 # Wayfarer: 1>2
+    fireRate: 1
     minAngle: 1 # Wayfarer: 3>1
     maxAngle: 5 # Wayfarer: 20>5
     angleIncrease: 1 # Wayfarer: 3>1
