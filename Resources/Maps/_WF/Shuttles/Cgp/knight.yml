@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 10/18/2026 08:57:22
-  entityCount: 672
+  time: 10/18/2026 09:16:52
+  entityCount: 674
 maps: []
 grids:
 - 1
@@ -613,6 +613,8 @@ entities:
       devices:
       - 360
       - 354
+      - 361
+      - 355
     - type: Fixtures
       fixtures: {}
   - uid: 4
@@ -638,6 +640,25 @@ entities:
       - 356
     - type: Fixtures
       fixtures: {}
+  - uid: 673
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,-3.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 353
+      - 359
+    - type: Fixtures
+      fixtures: {}
+- proto: AirGrenade
+  entities:
+  - uid: 674
+    components:
+    - type: Transform
+      pos: 0.41588616,-1.2210902
+      parent: 1
 - proto: AirlockExternalGlassNfsdLocked
   entities:
   - uid: 6
@@ -2837,6 +2858,9 @@ entities:
     - type: Transform
       pos: 1.5,-2.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 673
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 354
@@ -2856,6 +2880,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,-9.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 3
     - type: AtmosPipeColor
       color: '#0055CCFF'
 - proto: GasVentScrubber
@@ -2904,6 +2931,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-4.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 673
     - type: AtmosPipeLayers
       pipeLayer: Secondary
     - type: AtmosPipeColor
@@ -2927,6 +2957,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-9.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 3
     - type: AtmosPipeLayers
       pipeLayer: Secondary
     - type: AtmosPipeColor
