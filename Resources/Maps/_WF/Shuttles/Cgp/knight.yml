@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 10/18/2026 08:47:44
+  time: 10/18/2026 08:57:22
   entityCount: 672
 maps: []
 grids:
@@ -1913,6 +1913,15 @@ entities:
     - type: Transform
       pos: -2.4551213,-3.255371
       parent: 1
+- proto: ClosetWallWardrobePrisonFilled
+  entities:
+  - uid: 385
+    components:
+    - type: Transform
+      pos: -5.5,-2.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: ComputerTabletopAdvancedRadar
   entities:
   - uid: 232
@@ -3078,15 +3087,6 @@ entities:
     - type: Transform
       pos: 1.6253219,6.641119
       parent: 1
-- proto: NFPrisonerClosetWallOrange
-  entities:
-  - uid: 385
-    components:
-    - type: Transform
-      pos: -5.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
 - proto: NitrogenCanister
   entities:
   - uid: 386
@@ -3456,25 +3456,6 @@ entities:
           - Toggle
     - type: Fixtures
       fixtures: {}
-  - uid: 441
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -4.6088314,-4.6812544
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        107:
-        - - Pressed
-          - Toggle
-        106:
-        - - Pressed
-          - Toggle
-        105:
-        - - Pressed
-          - Toggle
-    - type: Fixtures
-      fixtures: {}
   - uid: 442
     components:
     - type: Transform
@@ -3543,6 +3524,19 @@ entities:
         - - Pressed
           - DoorBolt
         12:
+        - - Pressed
+          - DoorBolt
+    - type: Fixtures
+      fixtures: {}
+  - uid: 441
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.615132,-4.683972
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        16:
         - - Pressed
           - DoorBolt
     - type: Fixtures
